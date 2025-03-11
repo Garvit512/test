@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Run API Test') {
             steps {
-                sh 'python job.py https://jsonplaceholder.typicode.com/todos/1 --key userId'
+                sh 'python3 job.py https://jsonplaceholder.typicode.com/todos/1 --key userId'
             }
         }
     }
